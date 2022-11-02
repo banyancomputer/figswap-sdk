@@ -1,4 +1,8 @@
 export enum ChainId {
+  WALLABY = 31415,
+  // TODO (amiller68) - #FilecoinMainnet - Add Filecoin Mainnet
+  // FILECOIN = 314,
+
   ETHEREUM = 1,
   ROPSTEN = 3,
   RINKEBY = 4,

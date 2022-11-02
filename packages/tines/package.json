@@ -1,6 +1,6 @@
 {
-  "name": "@sushiswap/tines",
-  "version": "1.0.0-canary.125",
+  "name": "@figswap/tines",
+  "version": "0.0.0-canary.0",
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -9,7 +9,7 @@
   ],
   "module": "dist/tines.esm.js",
   "repository": {
-    "url": "sushiswap/sdk",
+    "url": "figswap/sdk",
     "directory": "packages/tines"
   },
   "publishConfig": {

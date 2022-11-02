@@ -4,6 +4,7 @@ import {
   Celo,
   Ether,
   Fantom,
+  Filecoin,
   Fuse,
   Glmr,
   Harmony,
@@ -23,6 +24,10 @@ import { ChainId } from '../enums'
 import { NativeMap } from '../types'
 
 export const NATIVE: NativeMap = {
+  // TODO - #FilecoinMainnet
+  // [ChainId.FILECOIN]: Filecoin.onChain(ChainId.FILECOIN),
+  [ChainId.WALLABY]: Filecoin.onChain(ChainId.WALLABY),
+
   [ChainId.ETHEREUM]: Ether.onChain(ChainId.ETHEREUM),
   [ChainId.ROPSTEN]: Ether.onChain(ChainId.ROPSTEN),
   [ChainId.RINKEBY]: Ether.onChain(ChainId.RINKEBY),

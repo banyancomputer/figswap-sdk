@@ -1,4 +1,8 @@
 export enum ChainKey {
+  // TODO (amiller68): #FilecoinMainnet
+  // FILECOIN = 'filecoin',
+
+  WALLABY = 'wallaby',
   ARBITRUM = 'arbitrum',
   ARBITRUM_TESTNET = 'arbitrum-testnet',
   AVALANCHE = 'avalanche',

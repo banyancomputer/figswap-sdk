@@ -1,6 +1,6 @@
 {
-  "name": "@sushiswap/core-sdk",
-  "version": "1.0.0-canary.138",
+  "name": "@figswap/core-sdk",
+  "version": "0.0.0-canary.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -9,7 +9,7 @@
   ],
   "module": "dist/core-sdk.esm.js",
   "repository": {
-    "url": "sushiswap/sdk",
+    "url": "figswap/sdk",
     "directory": "packages/core-sdk"
   },
   "publishConfig": {

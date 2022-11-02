@@ -251,6 +251,7 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
         ;[amountOut] = pair.getOutputAmount(amountIn)
       } catch (error) {
         // input too low
+        // @ts-ignore
         if (error.isInsufficientInputAmountError) {
           continue
         }
@@ -344,6 +345,7 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
       try {
         ;[amountIn] = pair.getInputAmount(amountOut)
       } catch (error) {
+        // @ts-ignore
         // not enough liquidity in this pair
         if (error.isInsufficientReservesError) {
           continue

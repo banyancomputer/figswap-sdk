@@ -5,6 +5,10 @@ import { ChainId } from '../enums'
 import { Token } from '../entities/Token'
 
 export const USDC: TokenMap = {
+  // TODO - #FilecoinMainnet
+  // [ChainId.FILECOIN]: new Token(ChainId.FILECOIN, USDC_ADDRESS[ChainId.FILECOIN], 6, 'USDC', 'USD Coin'),
+  [ChainId.WALLABY]: new Token(ChainId.WALLABY, USDC_ADDRESS[ChainId.WALLABY], 6, 'USDC', 'USD Coin'),
+
   [ChainId.ETHEREUM]: new Token(ChainId.ETHEREUM, USDC_ADDRESS[ChainId.ETHEREUM], 6, 'USDC', 'USD Coin'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, USDC_ADDRESS[ChainId.ROPSTEN], 6, 'USDC', 'USD Coin'),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, USDC_ADDRESS[ChainId.KOVAN], 6, 'USDC', 'USD Coin'),
@@ -34,6 +38,9 @@ export const USD: TokenMap = {
 }
 
 export const WETH9: TokenMap = {
+  // TODO - #WallabyOnly : Do we need to add this?
+  [ChainId.WALLABY]: new Token(ChainId.WALLABY, WETH9_ADDRESS[ChainId.WALLABY], 18, 'WFIL', 'Wrapped Filecoin'),
+
   [ChainId.ETHEREUM]: new Token(ChainId.ETHEREUM, WETH9_ADDRESS[ChainId.ETHEREUM], 18, 'WETH', 'Wrapped Ether'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, WETH9_ADDRESS[ChainId.ROPSTEN], 18, 'WETH', 'Wrapped Ether'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, WETH9_ADDRESS[ChainId.RINKEBY], 18, 'WETH', 'Wrapped Ether'),
@@ -79,6 +86,8 @@ export const WETH9: TokenMap = {
 }
 
 export const WNATIVE: TokenMap = {
+  [ChainId.WALLABY]: new Token(ChainId.WALLABY, WNATIVE_ADDRESS[ChainId.WALLABY], 18, 'WFIL', 'Wrapped Filecoin'),
+
   [ChainId.ETHEREUM]: WETH9[ChainId.ETHEREUM],
   [ChainId.ROPSTEN]: WETH9[ChainId.ROPSTEN],
   [ChainId.RINKEBY]: WETH9[ChainId.RINKEBY],
@@ -170,6 +179,8 @@ export const WNATIVE: TokenMap = {
 }
 
 export const SUSHI: ChainTokenMap = {
+  // TODO (amiller68) - #FilecoinMainnet / #WallabyOnly : Add equiv of SUSHI
+
   [ChainId.ETHEREUM]: new Token(ChainId.ETHEREUM, SUSHI_ADDRESS[ChainId.ETHEREUM], 18, 'SUSHI', 'SushiToken'),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, SUSHI_ADDRESS[ChainId.ROPSTEN], 18, 'SUSHI', 'SushiToken'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, SUSHI_ADDRESS[ChainId.RINKEBY], 18, 'SUSHI', 'SushiToken'),

@@ -1726,6 +1726,98 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@figswap/bentobox-sdk@workspace:packages/bentobox-sdk":
+  version: 0.0.0-use.local
+  resolution: "@figswap/bentobox-sdk@workspace:packages/bentobox-sdk"
+  dependencies:
+    "@sushiswap/core-sdk": 1.0.0-canary.138
+    tsdx: ^0.14.1
+  languageName: unknown
+  linkType: soft
+
+"@figswap/core-sdk@workspace:packages/core-sdk":
+  version: 0.0.0-use.local
+  resolution: "@figswap/core-sdk@workspace:packages/core-sdk"
+  dependencies:
+    "@ethersproject/address": ^5.4.0
+    "@ethersproject/bignumber": ^5.4.0
+    "@ethersproject/providers": ^5.4.0
+    "@ethersproject/solidity": ^5.4.0
+    "@types/big.js": ^6.1.0
+    big.js: ^6.1.1
+    decimal.js-light: ^2.5.0
+    jsbi: ^4.1.0
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.0
+    toformat: ^2.0.0
+    tsdx: ^0.14.1
+  languageName: unknown
+  linkType: soft
+
+"@figswap/kashi-sdk@workspace:packages/kashi-sdk":
+  version: 0.0.0-use.local
+  resolution: "@figswap/kashi-sdk@workspace:packages/kashi-sdk"
+  dependencies:
+    "@ethersproject/abi": ^5.4.0
+    "@ethersproject/contracts": ^5.4.0
+    "@sushiswap/bentobox-sdk": 1.0.0-canary.119
+    tsdx: ^0.14.1
+  languageName: unknown
+  linkType: soft
+
+"@figswap/limit-order-sdk@workspace:packages/limit-order-sdk":
+  version: 0.0.0-use.local
+  resolution: "@figswap/limit-order-sdk@workspace:packages/limit-order-sdk"
+  dependencies:
+    "@ethersproject/abi": ^5.4.0
+    "@ethersproject/abstract-signer": ^5.4.0
+    "@ethersproject/bytes": ^5.4.0
+    "@ethersproject/contracts": ^5.4.0
+    "@ethersproject/experimental": ^5.4.0
+    "@ethersproject/signing-key": ^5.4.0
+    "@ethersproject/transactions": ^5.4.0
+    "@sushiswap/core-sdk": 1.0.0-canary.138
+    eip-712: ^0.4.0
+    isomorphic-unfetch: ^3.0.0
+    tsdx: ^0.14.1
+  languageName: unknown
+  linkType: soft
+
+"@figswap/miso-sdk@workspace:packages/miso-sdk":
+  version: 0.0.0-use.local
+  resolution: "@figswap/miso-sdk@workspace:packages/miso-sdk"
+  dependencies:
+    tsdx: ^0.14.1
+  languageName: unknown
+  linkType: soft
+
+"@figswap/tines@workspace:packages/tines":
+  version: 0.0.0-use.local
+  resolution: "@figswap/tines@workspace:packages/tines"
+  dependencies:
+    "@ethersproject/bignumber": ^5.4.0
+    "@sushiswap/core-sdk": 1.0.0-canary.138
+    "@types/seedrandom": ^3.0.1
+    seedrandom: ^3.0.5
+    tsdx: ^0.14.1
+  languageName: unknown
+  linkType: soft
+
+"@figswap/trident-sdk@workspace:packages/trident-sdk":
+  version: 0.0.0-use.local
+  resolution: "@figswap/trident-sdk@workspace:packages/trident-sdk"
+  dependencies:
+    "@ethersproject/abi": ^5.4.0
+    "@ethersproject/bignumber": ^5.4.0
+    "@sushiswap/core-sdk": 1.0.0-canary.138
+    "@sushiswap/tines": 1.0.0-canary.125
+    "@sushiswap/trident": 1.0.0-canary.40
+    tiny-invariant: ^1.1.0
+    trident-preview: "npm:@sushiswap/trident@1.0.0-canary.36"
+    tsdx: ^0.14.1
+  languageName: unknown
+  linkType: soft
+
 "@findeth/abi@npm:^0.3.0":
   version: 0.3.1
   resolution: "@findeth/abi@npm:0.3.1"
@@ -3314,70 +3406,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sushiswap/bentobox-sdk@1.0.0-canary.113, @sushiswap/bentobox-sdk@workspace:packages/bentobox-sdk":
-  version: 0.0.0-use.local
-  resolution: "@sushiswap/bentobox-sdk@workspace:packages/bentobox-sdk"
+"@sushiswap/bentobox-sdk@npm:1.0.0-canary.119":
+  version: 1.0.0-canary.119
+  resolution: "@sushiswap/bentobox-sdk@npm:1.0.0-canary.119"
   dependencies:
-    "@sushiswap/core-sdk": 1.0.0-canary.132
-    tsdx: ^0.14.1
-  languageName: unknown
-  linkType: soft
+    "@sushiswap/core-sdk": 1.0.0-canary.138
+  checksum: 0bb777d1428dc479fdbe11be69ec74b0dc57d813adc798ae801eb3559aa3ce0b6c1f52debfaa8c057031d34df8d11eaeae5c02f3f289cd7fa7fe19308d460ed3
+  languageName: node
+  linkType: hard
 
-"@sushiswap/core-sdk@1.0.0-canary.132, @sushiswap/core-sdk@workspace:packages/core-sdk":
-  version: 0.0.0-use.local
-  resolution: "@sushiswap/core-sdk@workspace:packages/core-sdk"
+"@sushiswap/core-sdk@npm:1.0.0-canary.138":
+  version: 1.0.0-canary.138
+  resolution: "@sushiswap/core-sdk@npm:1.0.0-canary.138"
   dependencies:
     "@ethersproject/address": ^5.4.0
     "@ethersproject/bignumber": ^5.4.0
     "@ethersproject/providers": ^5.4.0
     "@ethersproject/solidity": ^5.4.0
-    "@types/big.js": ^6.1.0
     big.js: ^6.1.1
     decimal.js-light: ^2.5.0
     jsbi: ^4.1.0
     tiny-invariant: ^1.1.0
     tiny-warning: ^1.0.0
     toformat: ^2.0.0
-    tsdx: ^0.14.1
-  languageName: unknown
-  linkType: soft
-
-"@sushiswap/kashi-sdk@workspace:packages/kashi-sdk":
-  version: 0.0.0-use.local
-  resolution: "@sushiswap/kashi-sdk@workspace:packages/kashi-sdk"
-  dependencies:
-    "@ethersproject/abi": ^5.4.0
-    "@ethersproject/contracts": ^5.4.0
-    "@sushiswap/bentobox-sdk": 1.0.0-canary.113
-    tsdx: ^0.14.1
-  languageName: unknown
-  linkType: soft
-
-"@sushiswap/limit-order-sdk@workspace:packages/limit-order-sdk":
-  version: 0.0.0-use.local
-  resolution: "@sushiswap/limit-order-sdk@workspace:packages/limit-order-sdk"
-  dependencies:
-    "@ethersproject/abi": ^5.4.0
-    "@ethersproject/abstract-signer": ^5.4.0
-    "@ethersproject/bytes": ^5.4.0
-    "@ethersproject/contracts": ^5.4.0
-    "@ethersproject/experimental": ^5.4.0
-    "@ethersproject/signing-key": ^5.4.0
-    "@ethersproject/transactions": ^5.4.0
-    "@sushiswap/core-sdk": 1.0.0-canary.132
-    eip-712: ^0.4.0
-    isomorphic-unfetch: ^3.0.0
-    tsdx: ^0.14.1
-  languageName: unknown
-  linkType: soft
-
-"@sushiswap/miso-sdk@workspace:packages/miso-sdk":
-  version: 0.0.0-use.local
-  resolution: "@sushiswap/miso-sdk@workspace:packages/miso-sdk"
-  dependencies:
-    tsdx: ^0.14.1
-  languageName: unknown
-  linkType: soft
+  checksum: 519158f4aa0edb81171746da28dae2d47efa1e8c92a82cf3a03e679f0ceb386dce06d69aef6600424a74c421e159a1cbe8bbc241604e80fc4b476b20f33d6c3a
+  languageName: node
+  linkType: hard
 
 "@sushiswap/prettier-config@npm:^0.1.0":
   version: 0.1.0
@@ -3388,32 +3442,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sushiswap/tines@1.0.0-canary.116, @sushiswap/tines@workspace:packages/tines":
-  version: 0.0.0-use.local
-  resolution: "@sushiswap/tines@workspace:packages/tines"
+"@sushiswap/tines@npm:1.0.0-canary.125":
+  version: 1.0.0-canary.125
+  resolution: "@sushiswap/tines@npm:1.0.0-canary.125"
   dependencies:
     "@ethersproject/bignumber": ^5.4.0
-    "@sushiswap/core-sdk": 1.0.0-canary.132
-    "@types/seedrandom": ^3.0.1
-    seedrandom: ^3.0.5
-    tsdx: ^0.14.1
-  languageName: unknown
-  linkType: soft
-
-"@sushiswap/trident-sdk@workspace:packages/trident-sdk":
-  version: 0.0.0-use.local
-  resolution: "@sushiswap/trident-sdk@workspace:packages/trident-sdk"
-  dependencies:
-    "@ethersproject/abi": ^5.4.0
-    "@ethersproject/bignumber": ^5.4.0
-    "@sushiswap/core-sdk": 1.0.0-canary.132
-    "@sushiswap/tines": 1.0.0-canary.116
-    "@sushiswap/trident": 1.0.0-canary.40
-    tiny-invariant: ^1.1.0
-    trident-preview: "npm:@sushiswap/trident@1.0.0-canary.36"
-    tsdx: ^0.14.1
-  languageName: unknown
-  linkType: soft
+    "@sushiswap/core-sdk": 1.0.0-canary.138
+  checksum: ec7cc04c7f669e0980ff2542cc053c9dbf42554d0bbe690c74ecf53b77b776f7bc57aa174759421ecc6c094ae22310ee80836bb358f5fa4ab76b20c95c530bd2
+  languageName: node
+  linkType: hard
 
 "@sushiswap/trident@npm:1.0.0-canary.40":
   version: 1.0.0-canary.40

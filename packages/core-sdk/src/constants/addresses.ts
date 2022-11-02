@@ -1,7 +1,14 @@
 import { AddressMap } from '../types'
 import { ChainId } from '../enums'
 
+// TODO (amiller68): #FilecoinMainnet - Add Filecoin Mainnet for following fields where applicable
+// TODO (amiller68): Implement our own Tokens and Services
+
 export const SUSHI_ADDRESS: AddressMap = {
+  // TODO (amiller68): #WallabyOnly - Add address of deployed Contract / Token
+  // [ChainId.Wallaby]: '0x0000000000000000000000000000000000000000',
+  // [ChainId.Filecoin]: '0x0000000000000000000000000000000000000000',
+
   [ChainId.ETHEREUM]: '0x6B3595068778DD592e39A122f4f5a5cF09C90fE2',
   [ChainId.ROPSTEN]: '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F',
   [ChainId.RINKEBY]: '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F',
@@ -29,6 +36,10 @@ export const SUSHI_ADDRESS: AddressMap = {
 }
 
 export const USDC_ADDRESS: AddressMap = {
+  // X's Test USDC on Wallaby
+  [ChainId.WALLABY]: '0xdF7AC8fd4330189409f3d4dA6DA22AE728742F44',
+  // [ChainId.FILECOIN]: '0x0000000000000000000000000000000000000000',
+
   [ChainId.ETHEREUM]: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
   [ChainId.ROPSTEN]: '0x0D9C8723B343A8368BebE0B5E89273fF8D712e3C',
   [ChainId.KOVAN]: '0xb7a4F3E9097C08dA09517b5aB877F7a917224ede',
@@ -54,6 +65,9 @@ export const USDC_ADDRESS: AddressMap = {
 }
 
 export const USD_ADDRESS: AddressMap = {
+  [ChainId.WALLABY]: USDC_ADDRESS[ChainId.WALLABY],
+  // [ChainId.FILECOIN]: USDC_ADDRESS[ChainId.FILECOIN],
+
   [ChainId.ETHEREUM]: USDC_ADDRESS[ChainId.ETHEREUM],
   [ChainId.ROPSTEN]: USDC_ADDRESS[ChainId.ROPSTEN],
   [ChainId.KOVAN]: USDC_ADDRESS[ChainId.KOVAN],
@@ -79,6 +93,12 @@ export const USD_ADDRESS: AddressMap = {
 }
 
 export const WETH9_ADDRESS: AddressMap = {
+  // X's deployed Address for a wrapped Filecoin token on Wallaby
+  // TODO (amiller68) - Is this correct? Is it supposed to be wrapped eth, or any native wrapped erc20?
+  [ChainId.WALLABY]: '0xeEFac6efBa8Da6F36C3C3d162E193914963AFF7d',
+  // [ChainId.FILECOIN]: '0x0b1ba0af832d7c05fd64161e0db78e85978e8082',
+
+
   [ChainId.ETHEREUM]: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
   [ChainId.ROPSTEN]: '0xc778417E063141139Fce010982780140Aa0cD5Ab',
   [ChainId.RINKEBY]: '0xc778417E063141139Fce010982780140Aa0cD5Ab',
@@ -108,6 +128,10 @@ export const WETH9_ADDRESS: AddressMap = {
 }
 
 export const WNATIVE_ADDRESS: AddressMap = {
+  // TODO (amiller68) - Is this correct? Is it supposed to be wrapped eth, or any native wrapped erc20?
+  [ChainId.WALLABY]: WETH9_ADDRESS[ChainId.WALLABY],
+  // [ChainId.FILECOIN]: WETH9_ADDRESS[ChainId.FILECOIN],
+
   [ChainId.ETHEREUM]: WETH9_ADDRESS[ChainId.ETHEREUM],
   [ChainId.ROPSTEN]: WETH9_ADDRESS[ChainId.ROPSTEN],
   [ChainId.RINKEBY]: WETH9_ADDRESS[ChainId.RINKEBY],
@@ -215,6 +239,8 @@ export const FRAX_ADDRESS: AddressMap = {
 }
 
 export const FACTORY_ADDRESS: AddressMap = {
+  // TODO (amiller68) - Do we need to add one for Filecoin / Wallaby ?
+
   [ChainId.ETHEREUM]: '0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac',
   [ChainId.ROPSTEN]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
   [ChainId.RINKEBY]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
