@@ -1,5 +1,5 @@
-# SushiSwap SDK Monorepo
-
+# FigSwap SDK Monorepo
+`
 ## Prerequisites
 
 - Yarn v3 (If unfamilair consult https://yarnpkg.com/getting-started/install to get started and familiarise yourself)
