@@ -40,7 +40,6 @@ export const USD: TokenMap = {
 }
 
 export const WETH9: TokenMap = {
-  // TODO - #WallabyOnly : Do we need to add this?
   [ChainId.WALLABY]: new Token(ChainId.WALLABY, WETH9_ADDRESS[ChainId.WALLABY], 18, 'WFIL', 'Wrapped Filecoin'),
 
   // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
@@ -89,7 +88,7 @@ export const WETH9: TokenMap = {
 }
 
 export const WNATIVE: TokenMap = {
-  [ChainId.WALLABY]: new Token(ChainId.WALLABY, WNATIVE_ADDRESS[ChainId.WALLABY], 18, 'WFIL', 'Wrapped Filecoin'),
+  [ChainId.WALLABY]: WETH9[ChainId.WALLABY],
 
     // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
   // [ChainId.ETHEREUM]: WETH9[ChainId.ETHEREUM],

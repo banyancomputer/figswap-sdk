@@ -284,6 +284,7 @@ export const FACTORY_ADDRESS: AddressMap = {
   // [ChainId.BOBA_AVAX]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
 }
 
+// This is for cross-chain routing
 export const ROUTER_ADDRESS: AddressMap = {
   // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
   // [ChainId.ETHEREUM]: '0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F',
@@ -320,7 +321,10 @@ export const ROUTER_ADDRESS: AddressMap = {
   // [ChainId.BOBA_AVAX]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
 }
 
+// Main contract addresses
 export const MASTERCHEF_ADDRESS: AddressMap = {
+  // [ChainId.WALLABY]: '0x0000',
+
     // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
   // [ChainId.ETHEREUM]: '0xc2EdaD668740f1aA35E4D8f227fB8E17dcA888Cd',
   // [ChainId.ROPSTEN]: '0x80C7DD17B01855a6D2347444a0FCC36136a314de',
@@ -329,6 +333,7 @@ export const MASTERCHEF_ADDRESS: AddressMap = {
   // [ChainId.KOVAN]: '0x80C7DD17B01855a6D2347444a0FCC36136a314de',
 }
 
+// TODO (amiller68): #WallabyOnly / #Reseach What is this?
 export const BAR_ADDRESS: AddressMap = {
     // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
   // [ChainId.ETHEREUM]: '0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272',

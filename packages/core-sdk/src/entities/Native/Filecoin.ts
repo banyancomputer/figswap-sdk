@@ -9,8 +9,7 @@ import invariant from 'tiny-invariant'
  */
 export class Filecoin extends NativeCurrency {
   protected constructor(chainId: number) {
-    // TODO - #FilecoinMainnet Should this be 'WFIL'?
-    super(chainId, 18, 'FIL', 'FIlecoin')
+    super(chainId, 18, 'FIL', 'Filecoin')
   }
 
   public get wrapped(): Token {
