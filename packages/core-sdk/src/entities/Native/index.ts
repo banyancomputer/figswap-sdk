@@ -1,10 +1,14 @@
 // Native exports
+// Wallaby
+export { tFilecoin } from './tFilecoin'
+// Filecoin Mainnet
+export { Filecoin } from './Filecoin'
+
 export { Avalanche } from './Avalanche'
 export { Binance } from './Binance'
 export { Celo } from './Celo'
 export { Ether } from './Ether'
 export { Fantom } from './Fantom'
-export { Filecoin } from './Filecoin'
 export { Harmony } from './Harmony'
 export { Heco } from './Heco'
 export { Matic } from './Matic'

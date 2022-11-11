@@ -4,9 +4,12 @@ import { Token } from '../Token'
 import { WETH9 } from '../../constants/tokens'
 import invariant from 'tiny-invariant'
 
-export class Filecoin extends NativeCurrency {
+/**
+ * Native token for the Wallaby network
+ */
+export class tFilecoin extends NativeCurrency {
   protected constructor(chainId: number) {
-    super(chainId, 18, 'FIL', 'Filecoin')
+    super(chainId, 18, 'tFIL', 'Test Filecoin')
   }
 
   public get wrapped(): Token {
@@ -15,10 +18,10 @@ export class Filecoin extends NativeCurrency {
     return weth9
   }
 
-  private static _cache: { [chainId: number]: Filecoin } = {}
+  private static _cache: { [chainId: number]: tFilecoin } = {}
 
-  public static onChain(chainId: number): Filecoin {
-    return this._cache[chainId] ?? (this._cache[chainId] = new Filecoin(chainId))
+  public static onChain(chainId: number): tFilecoin {
+    return this._cache[chainId] ?? (this._cache[chainId] = new tFilecoin(chainId))
   }
 
   public equals(other: Currency): boolean {

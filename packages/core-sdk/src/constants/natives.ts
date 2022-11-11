@@ -5,6 +5,7 @@ import {
   Ether,
   Fantom,
   Filecoin,
+  tFilecoin,
   Fuse,
   Glmr,
   Harmony,
@@ -26,7 +27,7 @@ import { NativeMap } from '../types'
 export const NATIVE: NativeMap = {
   // TODO - #FilecoinMainnet
   // [ChainId.FILECOIN]: Filecoin.onChain(ChainId.FILECOIN),
-  [ChainId.WALLABY]: Filecoin.onChain(ChainId.WALLABY),
+  [ChainId.WALLABY]: tFilecoin.onChain(ChainId.WALLABY),
 
   // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
   // [ChainId.ETHEREUM]: Ether.onChain(ChainId.ETHEREUM),
