@@ -3,6 +3,7 @@ import { ChainId } from '../enums'
 
 // TODO (amiller68): #FilecoinMainnet - Add Filecoin Mainnet for following fields where applicable
 // TODO (amiller68): Implement our own Tokens and Services
+// TODO (amiller68): Map out Token Meta Deta Dependencies and see if we can make this setup less confusing
 
 export const SUSHI_ADDRESS: AddressMap = {
   // TODO (amiller68): #WallabyOnly - Add address of deployed Contract / Token
@@ -38,7 +39,7 @@ export const SUSHI_ADDRESS: AddressMap = {
 
 export const USDC_ADDRESS: AddressMap = {
   // X's Test USDC on Wallaby
-  [ChainId.WALLABY]: '0xdF7AC8fd4330189409f3d4dA6DA22AE728742F44',
+  [ChainId.WALLABY]: '0xa9cC21CaF05401aEf28c0F552719FAa60d1385B3',
   // [ChainId.FILECOIN]: '0x0000000000000000000000000000000000000000',
 
   // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
@@ -98,7 +99,7 @@ export const USD_ADDRESS: AddressMap = {
 export const WETH9_ADDRESS: AddressMap = {
   // X's deployed Address for a wrapped Filecoin token on Wallaby
   // TODO (amiller68) - Is this correct? Is it supposed to be wrapped eth, or any native wrapped erc20?
-  [ChainId.WALLABY]: '0xeEFac6efBa8Da6F36C3C3d162E193914963AFF7d',
+  [ChainId.WALLABY]: '0x750Bb597cD90Ef5E9eb511c72BfBe6245DcAa2fa',
   // [ChainId.FILECOIN]: '0x0b1ba0af832d7c05fd64161e0db78e85978e8082',
 
   // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
