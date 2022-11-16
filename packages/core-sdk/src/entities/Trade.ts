@@ -211,6 +211,7 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
   }
 
   /**
+   * TODO (amiller68) : Research how best Trades work
    * Given a list of pairs, and a fixed amount in, returns the top `maxNumResults` trades that go from an input token
    * amount to an output token, making at most `maxHops` hops.
    * Note this does not consider aggregation, as routes are linear. It's possible a better route exists by splitting

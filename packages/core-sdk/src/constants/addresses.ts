@@ -248,7 +248,8 @@ export const FRAX_ADDRESS: AddressMap = {
 }
 
 export const FACTORY_ADDRESS: AddressMap = {
-  // TODO (amiller68) - Do we need to add one for Filecoin / Wallaby ?
+  // TODO (amiller68) - Get a real Factory Address for Wallaby
+  [ChainId.WALLABY]: '0x1F98431c8aD98523631AE4a59f267346ea31F984',
 
   // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
   // [ChainId.ETHEREUM]: '0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac',
@@ -285,7 +286,7 @@ export const FACTORY_ADDRESS: AddressMap = {
   // [ChainId.BOBA_AVAX]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
 }
 
-// This is for cross-chain routing
+// This is either for cross-chain routing or for routing trades
 export const ROUTER_ADDRESS: AddressMap = {
   // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
   // [ChainId.ETHEREUM]: '0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F',

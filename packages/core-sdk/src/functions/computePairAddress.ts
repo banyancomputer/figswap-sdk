@@ -4,6 +4,7 @@ import { INIT_CODE_HASH } from '../constants'
 import { Token } from '../entities/Token'
 import { getCreate2Address } from '@ethersproject/address'
 
+// Get the Address of the of Liqiudity Pool for the token pair
 export const computePairAddress = ({
   factoryAddress,
   tokenA,

@@ -1,7 +1,8 @@
 import { ChainId } from '../enums/ChainId'
 
 export const INIT_CODE_HASH: { [chainId: number]: string } = {
-  // TODO - #WallbyOnly / #FilecoinMainnet Do we this hash?
+  // TODO - #WallbyOnly / #FilecoinMainnet
+    // TODO #FactoryAddress This is needed for the factory address
 
   // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
   // [ChainId.ETHEREUM]: '0xe18a34eb0e04b04f7a0ac29a6e80748dca96319b42c54d679cb821dca90c6303',
