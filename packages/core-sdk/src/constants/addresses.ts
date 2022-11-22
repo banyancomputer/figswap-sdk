@@ -39,7 +39,7 @@ export const SUSHI_ADDRESS: AddressMap = {
 
 export const USDC_ADDRESS: AddressMap = {
   // X's Test USDC on Wallaby
-  [ChainId.WALLABY]: '0xa9cC21CaF05401aEf28c0F552719FAa60d1385B3',
+  [ChainId.WALLABY]: '0x07c6E5e3e0614e3D099a68eF4eb53B8c5C72D9Af',
   // [ChainId.FILECOIN]: '0x0000000000000000000000000000000000000000',
 
   // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
@@ -98,8 +98,7 @@ export const USD_ADDRESS: AddressMap = {
 
 export const WETH9_ADDRESS: AddressMap = {
   // X's deployed Address for a wrapped Filecoin token on Wallaby
-  // TODO (amiller68) - Is this correct? Is it supposed to be wrapped eth, or any native wrapped erc20?
-  [ChainId.WALLABY]: '0x750Bb597cD90Ef5E9eb511c72BfBe6245DcAa2fa',
+  [ChainId.WALLABY]: '0x6fAAC5AE22E9d9a4166e6145Afb9Fe4B6398320A',
   // [ChainId.FILECOIN]: '0x0b1ba0af832d7c05fd64161e0db78e85978e8082',
 
   // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
@@ -499,6 +498,7 @@ export const MERKLE_DISTRIBUTOR_ADDRESS: AddressMap = {
 }
 
 export const MULTICALL2_ADDRESS: AddressMap = {
+  [ChainId.WALLABY]: '0xd46E0372Df8ACC384871B8715526562c6a054d3f',
   // Note (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
   // [ChainId.ETHEREUM]: '0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696',
   // [ChainId.ROPSTEN]: '0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696',
