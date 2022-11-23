@@ -4,7 +4,7 @@ import { Token } from '../Token'
 import { WETH9 } from '../../constants/tokens'
 import invariant from 'tiny-invariant'
 
-/**
+/** MAYBE NOT NEEDED
  * Native token for the Wallaby network
  */
 export class tFilecoin extends NativeCurrency {
