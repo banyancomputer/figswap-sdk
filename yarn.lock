@@ -1726,7 +1726,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@figswap/core-sdk@0.0.0-canary.0, @figswap/core-sdk@workspace:packages/core-sdk":
+"@figswap/core-sdk@workspace:packages/core-sdk":
   version: 0.0.0-use.local
   resolution: "@figswap/core-sdk@workspace:packages/core-sdk"
   dependencies:
@@ -1756,7 +1756,7 @@ __metadata:
     "@ethersproject/experimental": ^5.4.0
     "@ethersproject/signing-key": ^5.4.0
     "@ethersproject/transactions": ^5.4.0
-    "@figswap/core-sdk": 0.0.0-canary.0
+    "@sushiswap/core-sdk": 1.0.0-canary.138
     eip-712: ^0.4.0
     isomorphic-unfetch: ^3.0.0
     tsdx: ^0.14.1
@@ -3348,6 +3348,24 @@ __metadata:
   dependencies:
     type-detect: 4.0.8
   checksum: 6159726db5ce6bf9f2297f8427f7ca5b3dff45b31e5cee23496f1fa6ef0bb4eab878b23fb2c5e6446381f6a66aba4968ef2fc255c1180d753d4b8c271636a2e5
+  languageName: node
+  linkType: hard
+
+"@sushiswap/core-sdk@npm:1.0.0-canary.138":
+  version: 1.0.0-canary.138
+  resolution: "@sushiswap/core-sdk@npm:1.0.0-canary.138"
+  dependencies:
+    "@ethersproject/address": ^5.4.0
+    "@ethersproject/bignumber": ^5.4.0
+    "@ethersproject/providers": ^5.4.0
+    "@ethersproject/solidity": ^5.4.0
+    big.js: ^6.1.1
+    decimal.js-light: ^2.5.0
+    jsbi: ^4.1.0
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.0
+    toformat: ^2.0.0
+  checksum: 519158f4aa0edb81171746da28dae2d47efa1e8c92a82cf3a03e679f0ceb386dce06d69aef6600424a74c421e159a1cbe8bbc241604e80fc4b476b20f33d6c3a
   languageName: node
   linkType: hard
 

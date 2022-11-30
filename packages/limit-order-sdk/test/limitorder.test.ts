@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount, Price, Token } from '@figswap/core-sdk'
+import { ChainId, CurrencyAmount, Price, Token } from '@sushiswap/core-sdk'
 import { FillLimitOrder, ILimitOrderData, LimitOrder } from '../src'
 
 import { BigNumber } from '@ethersproject/bignumber'
