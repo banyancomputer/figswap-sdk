@@ -1,4 +1,4 @@
-import { AddressMap, ChainId } from '@sushiswap/core-sdk'
+import { AddressMap, ChainId } from '@figswap/core-sdk'
 
 export const LAMBDA_URL = 'https://limit-order-ffo5rqmjnq-uc.a.run.app'
 
