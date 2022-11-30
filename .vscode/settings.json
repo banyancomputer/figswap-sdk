@@ -1,4 +1,8 @@
 {
   "eslint.validate": ["javascript", "typescript"],
-  "debug.javascript.unmapMissingSources": true
+  "debug.javascript.unmapMissingSources": true,
+  "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+  "workbench.preferredHighContrastColorTheme": "Visual Studio Dark",
+  "window.autoDetectColorScheme": false,
+  "workbench.preferredLightColorTheme": "Visual Studio Dark"
 }

@@ -2,18 +2,16 @@ import { AddressMap } from '../types'
 import { ChainId } from '../enums'
 
 // TODO (amiller68): #FilecoinMainnet - Add Filecoin Mainnet for following fields where applicable
-// TODO (amiller68): Implement our own Tokens and Services
-// TODO (amiller68): Map out Token Meta Deta Dependencies and see if we can make this setup less confusing
 
 export const SUSHI_ADDRESS: AddressMap = {
   // TODO (amiller68): #WallabyOnly - Add address of deployed Contract / Token
-  // [ChainId.Wallaby]: '0x0000000000000000000000000000000000000000',
+  [ChainId.WALLABY]: '0xa62fEd05f0166f73790ce6ea3d5665B4dCBA9f8a',
   // [ChainId.Filecoin]: '0x0000000000000000000000000000000000000000',
 }
 
 export const USDC_ADDRESS: AddressMap = {
   // Test USDC on Wallaby
-  [ChainId.WALLABY]: '0x07c6E5e3e0614e3D099a68eF4eb53B8c5C72D9Af',
+  [ChainId.WALLABY]: '0x22a545f13af6bD9F5b7b0BD005e8d47835c60Fb2',
   // [ChainId.FILECOIN]: '0x0000000000000000000000000000000000000000',
 }
 
@@ -24,14 +22,20 @@ export const USD_ADDRESS: AddressMap = {
 
 export const WETH9_ADDRESS: AddressMap = {
   // Test WFIL contract on Wallaby
-  [ChainId.WALLABY]: '0x6fAAC5AE22E9d9a4166e6145Afb9Fe4B6398320A',
+  [ChainId.WALLABY]: '0x157C7e9393338eaa110E59583529154E6A3C99e1',
   // [ChainId.FILECOIN]: '0x0b1ba0af832d7c05fd64161e0db78e85978e8082',
+
+  // Note (amiller68) - Keep this around for internal testing
+  [ChainId.ETHEREUM]: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
 }
 
 export const WNATIVE_ADDRESS: AddressMap = {
   // Test WNAIVE contract on Wallaby
   [ChainId.WALLABY]: WETH9_ADDRESS[ChainId.WALLABY],
   // [ChainId.FILECOIN]: WETH9_ADDRESS[ChainId.FILECOIN],
+
+  // Note (amiller68) - Keep this around for internal testing
+  [ChainId.ETHEREUM]: WETH9_ADDRESS[ChainId.ETHEREUM],
 }
 
 export const DAI_ADDRESS: AddressMap = {
@@ -54,42 +58,40 @@ export const FRAX_ADDRESS: AddressMap = {
 
 export const FACTORY_ADDRESS: AddressMap = {
   // TODO (amiller68) - Get a real factory address
-  // [ChainId.WALLABY]: '0x1F98431c8aD98523631AE4a59f267346ea31F984',
-  // [ChainId.ETHEREUM]: '0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac',
+  [ChainId.WALLABY]: '0x8569b2f768991646a55464aB2822949e27f7AEFc',
+
+  // Note (amiller68) - Keep this around for internal testing
+  [ChainId.ETHEREUM]: '0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac',
 }
 
 export const ROUTER_ADDRESS: AddressMap = {
-  // TODO (amiller68) - Get a real router address
+  [ChainId.WALLABY]: '0xfde7e8F2b5d6e2Cf03cDF98B14D260F4B26d0ab9',
   // [ChainId.ETHEREUM]: '0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F',
 }
 
 // Main contract addresses
 export const MASTERCHEF_ADDRESS: AddressMap = {
+  [ChainId.WALLABY]: '0xC66aC3381DA311cFBD0CA09c76FE1cd79A1af667',
   // TODO (amiller68) - Get a MasterChef address
   // [ChainId.ETHEREUM]: '0xc2EdaD668740f1aA35E4D8f227fB8E17dcA888Cd',
 }
 
 export const BAR_ADDRESS: AddressMap = {
+  [ChainId.WALLABY]: '0xE2e7D6D35B6906f1750D5e997aF0aaB965E9f351',
   // TODO (amiller68) - Get a Bar address
   // [ChainId.ETHEREUM]: '0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272',
 }
 
 export const MAKER_ADDRESS: AddressMap = {
+  [ChainId.WALLABY]: '0xf8aD2BAdCc21fb1355825cCBD6EDcbb0E745bdCa',
   // TODO (amiller68) - Get a Maker address
   // [ChainId.ETHEREUM]: '0xE11fc0B43ab98Eb91e9836129d1ee7c3Bc95df50',
 }
 
 export const TIMELOCK_ADDRESS: AddressMap = {
+  [ChainId.WALLABY]: '0x0e119865BDF6773ECB5C59460b1CEA4F430015Ca',
   // TODO (amiller68): #WallabyOnly - We will only support Wallaby until we figure out MultiChain
   // [ChainId.ETHEREUM]: '0x9a8541Ddf3a932a9A922B607e9CF7301f1d47bD1',
-}
-
-export const BENTOBOX_ADDRESS: AddressMap = {
-  // Note (amiller68): I don't think we need this
-}
-
-export const KASHI_ADDRESS: AddressMap = {
-  // Note (amiller68): I don't think we need this
 }
 
 export const SUSHISWAP_SWAPPER_ADDRESS: AddressMap = {
@@ -132,6 +134,7 @@ export const MINICHEF_ADDRESS: AddressMap = {
 }
 
 export const MASTERCHEF_V2_ADDRESS: AddressMap = {
+  [ChainId.WALLABY]: '0x9Cc795d9dBEFC04697B55CfB6607223Aa59a60aD',
   // TODO (amiller68): Get a MasterChef V2 address (Maybe we don't need this?)
   // [ChainId.ETHEREUM]: '0xEF0881eC094552b2e128Cf945EF17a6752B4Ec5d',
 }
@@ -142,6 +145,7 @@ export const ENS_REGISTRAR_ADDRESS: AddressMap = {
 }
 
 export const ZAPPER_ADDRESS: AddressMap = {
+  [ChainId.WALLABY]: '0x0c1d43a5341b66B948403810ab9a74Ca7dCf9B3d',
   // TODO (amiller68): Get a Zapper address
   // [ChainId.ETHEREUM]: '0xcff6eF0B9916682B37D80c19cFF8949bc1886bC2',
 }
@@ -154,7 +158,7 @@ export const MERKLE_DISTRIBUTOR_ADDRESS: AddressMap = {
 // Addresses pointing to (specifically) Uniswap MultiCall2 contracts:
 // see https://etherscan.io/address/0x1F98415757620B543A52E61c46B32eB19261F984#code
 export const MULTICALL2_ADDRESS: AddressMap = {
-  [ChainId.WALLABY]: '0xDF0B00c79472De6E5ACAE231e2d66A8C32efb72f',
+  [ChainId.WALLABY]: '0x92e010550ebf8d35B26Fb53d708e687E11a572c2',
 }
 
 // Note (amiller68): I don't think we need this

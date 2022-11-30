@@ -6,6 +6,7 @@ import invariant from 'tiny-invariant'
 
 /**
  * Ether is the main usage of a 'native' currency, i.e. for Ethereum mainnet and all testnets
+ * Thid file is kept as a reference for the future
  */
 export class Ether extends NativeCurrency {
   protected constructor(chainId: number) {
