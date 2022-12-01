@@ -35,7 +35,5 @@ export const WNATIVE: TokenMap = {
 
 // Map of SUSHI token for each chain
 export const SUSHI: ChainTokenMap = {
-  // TODO (amiller68) - Do we need to add this?
   [ChainId.WALLABY]: new Token(ChainId.WALLABY, SUSHI_ADDRESS[ChainId.WALLABY], 18, 'SUSHI', 'SushiToken'),
-
 }
