@@ -1,6 +1,6 @@
 {
   "name": "@figswap/core-sdk",
-  "version": "0.0.0-canary.2",
+  "version": "0.0.0-canary.3",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -39,5 +39,5 @@
     "@types/big.js": "^6.1.0",
     "tsdx": "^0.14.1"
   },
-  "gitHead": "39ae97df991b2b9820b376e7503ae57d95500a2d"
+  "gitHead": "7db938298f364ca2df9bcaccb4c65f39bead8f68"
 }

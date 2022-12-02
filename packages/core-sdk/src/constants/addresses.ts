@@ -10,12 +10,12 @@ export const UNI_FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
 
 // SushiToken.col contract - Sushi token is a governance token underlying TJ's SushiSwap
 export const SUSHI_ADDRESS: AddressMap = {
-  [ChainId.WALLABY]: '0xa62fEd05f0166f73790ce6ea3d5665B4dCBA9f8a',
+  [ChainId.WALLABY]: '0x1521DcC7800Cdcbb1C2584413315d6a07E596FD0',
 }
 
 // JoeToken.sol contract - This is Joe governance token for joe specific products. Not MVP
 export const JOE_ADDRESS: AddressMap = {
-  [ChainId.WALLABY]: '0x497D19586e5567e7045D07872F58811bfeDC21E5',
+  [ChainId.WALLABY]: '0xB244417A76302Fa453B6D31ed9Bb3584c030015c',
 }
 
 export const USDC_ADDRESS: AddressMap = {
@@ -80,14 +80,14 @@ export const ROUTER_ADDRESS: AddressMap = {
 
 // MasterChefJoeV3.sol contract - Main contract addresses: handles minting new LPs, managin tokens, fees, etc
 export const MASTERCHEF_ADDRESS: AddressMap = {
-  [ChainId.WALLABY]: '0xC66aC3381DA311cFBD0CA09c76FE1cd79A1af667',
+  [ChainId.WALLABY]: '0xbc27065a13c9140974245Be7A1Fb5F215CdAfAA0',
   // TODO (amiller68) - Get a MasterChef address
   // [ChainId.ETHEREUM]: '0xc2EdaD668740f1aA35E4D8f227fB8E17dcA888Cd',
 }
 
 // JoeBar.sol Shit Coin staking contract holdover from TJ - not MVP but here anyway
 export const BAR_ADDRESS: AddressMap = {
-  [ChainId.WALLABY]: '0xE2e7D6D35B6906f1750D5e997aF0aaB965E9f351',
+  [ChainId.WALLABY]: '0x250B40ef0F3382586295c7C7fc67B1884efef922',
 }
 
 // JoeMakerV3.sol contract
@@ -141,9 +141,9 @@ export const MINICHEF_ADDRESS: AddressMap = {
   // [ChainId.MOONBEAM]: '0x011E52E4E40CF9498c79273329E8827b21E2e581',
 }
 
-// MasterChefJoeV2 contract
+// MasterChefJoeV2.sol contract
 export const MASTERCHEF_V2_ADDRESS: AddressMap = {
-  [ChainId.WALLABY]: '0x9Cc795d9dBEFC04697B55CfB6607223Aa59a60aD',
+  [ChainId.WALLABY]: '0x351e56fB077eb7A07A1636bF798082dF45bB19f4',
 }
 
 // Don't have equivalent for this in figswap contracts
@@ -174,6 +174,7 @@ export const MULTICALL2_ADDRESS: AddressMap = {
 
 // Don't have equivalent for this in figswap contracts
 export const BALANCE_FETCHER_ADDRESS: AddressMap = {
+  [ChainId.WALLABY]: '0x23708a06634234FCF2B86f350C9EdBEc6cD023fA',
   // [ChainId.ETHEREUM]: '0x386a4B75578C7843A6082EFe181D5d629236C047',
 }
 
