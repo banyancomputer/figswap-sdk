@@ -3,6 +3,11 @@ import { ChainId } from '../enums'
 
 // TODO (amiller68): #FilecoinMainnet - Add Filecoin Mainnet for following fields where applicable
 
+// The uni facotry address is the same on all chains
+// This is a fake placeholder address for the uni factory. TODO (amiller68) - Get a real address
+export const UNI_FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
+
+
 // SushiToken.col contract - Sushi token is a governance token underlying TJ's SushiSwap
 export const SUSHI_ADDRESS: AddressMap = {
   [ChainId.WALLABY]: '0xa62fEd05f0166f73790ce6ea3d5665B4dCBA9f8a',
@@ -15,7 +20,7 @@ export const JOE_ADDRESS: AddressMap = {
 
 export const USDC_ADDRESS: AddressMap = {
   // Test USDC on Wallaby
-  [ChainId.WALLABY]: '0x22a545f13af6bD9F5b7b0BD005e8d47835c60Fb2',
+  [ChainId.WALLABY]: '0xC1a013C313088A0e1E582CFcd4F11DF6acDc172E',
 }
 
 export const USD_ADDRESS: AddressMap = {
