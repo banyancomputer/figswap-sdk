@@ -20,7 +20,7 @@ export const JOE_ADDRESS: AddressMap = {
 
 export const USDC_ADDRESS: AddressMap = {
   // Test USDC on Wallaby
-  [ChainId.WALLABY]: '0xC1a013C313088A0e1E582CFcd4F11DF6acDc172E',
+  [ChainId.WALLABY]: '0xF5656de36820F114b0Ad9f1771392155F50c5F57',
 }
 
 export const USD_ADDRESS: AddressMap = {
